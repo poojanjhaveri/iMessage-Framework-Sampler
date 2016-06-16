@@ -1,5 +1,6 @@
 # iMessage-Framework-Sampler
 
+## How to Build
 Build and run with Xcode 8
 
 ## Stickers
