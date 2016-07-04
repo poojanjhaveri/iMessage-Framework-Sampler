@@ -1,0 +1,19 @@
+{
+  "properties" : {
+    "duration" : 5,
+    "duration-type" : "fps",
+    "repetitions" : 0
+  },
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "frames" : [
+    {
+      "filename" : "monkey_push_1@2x.png"
+    },
+    {
+      "filename" : "monkey_push2@2x.png"
+    }
+  ]
+}

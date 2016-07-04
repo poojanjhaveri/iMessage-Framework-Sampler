@@ -1,0 +1,32 @@
+{
+  "stickers" : [
+    {
+      "filename" : "Walk Away.stickersequence"
+    },
+    {
+      "filename" : "Walk.stickersequence"
+    },
+    {
+      "filename" : "Swing.stickersequence"
+    },
+    {
+      "filename" : "Throw.stickersequence"
+    },
+    {
+      "filename" : "Push.stickersequence"
+    },
+    {
+      "filename" : "Dead.stickersequence"
+    },
+    {
+      "filename" : "Arms.stickersequence"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "grid-size" : "small"
+  }
+}

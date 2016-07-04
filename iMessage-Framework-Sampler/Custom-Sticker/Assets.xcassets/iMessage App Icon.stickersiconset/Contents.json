@@ -1,0 +1,87 @@
+{
+  "images" : [
+    {
+      "size" : "27x20",
+      "idiom" : "universal",
+      "filename" : "  copy-7.png",
+      "scale" : "1x",
+      "platform" : "ios"
+    },
+    {
+      "size" : "27x20",
+      "idiom" : "universal",
+      "filename" : "  copy-6.png",
+      "scale" : "2x",
+      "platform" : "ios"
+    },
+    {
+      "size" : "27x20",
+      "idiom" : "universal",
+      "filename" : "  copy-5.png",
+      "scale" : "3x",
+      "platform" : "ios"
+    },
+    {
+      "size" : "32x24",
+      "idiom" : "universal",
+      "filename" : "  copy-4.png",
+      "scale" : "1x",
+      "platform" : "ios"
+    },
+    {
+      "size" : "32x24",
+      "idiom" : "universal",
+      "filename" : "  copy-3.png",
+      "scale" : "2x",
+      "platform" : "ios"
+    },
+    {
+      "size" : "32x24",
+      "idiom" : "universal",
+      "filename" : "  copy-2.png",
+      "scale" : "3x",
+      "platform" : "ios"
+    },
+    {
+      "size" : "1024x768",
+      "idiom" : "ios-marketing",
+      "filename" : "  copy-11.png",
+      "scale" : "1x",
+      "platform" : "ios"
+    },
+    {
+      "size" : "60x45",
+      "idiom" : "iphone",
+      "filename" : "  copy-1.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "60x45",
+      "idiom" : "iphone",
+      "filename" : "  copy.png",
+      "scale" : "3x"
+    },
+    {
+      "size" : "67x50",
+      "idiom" : "ipad",
+      "filename" : "  copy-10.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "67x50",
+      "idiom" : "ipad",
+      "filename" : "  copy-9.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "74x55",
+      "idiom" : "ipad",
+      "filename" : "  copy-8.png",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

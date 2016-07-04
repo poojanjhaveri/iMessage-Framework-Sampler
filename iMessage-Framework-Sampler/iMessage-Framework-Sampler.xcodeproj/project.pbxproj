@@ -14,6 +14,12 @@
 		688D26BD1D11FD370056DA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688D26BB1D11FD370056DA1A /* LaunchScreen.storyboard */; };
 		688D26C91D11FD5B0056DA1A /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688D26C81D11FD5B0056DA1A /* Stickers.xcassets */; };
 		688D26CD1D11FD5B0056DA1A /* DespicableMe-Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 688D26C61D11FD5B0056DA1A /* DespicableMe-Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		689270661D138338005E8949 /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689270651D138338005E8949 /* StickerCell.swift */; };
+		68F206681D125DD30077C010 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F206671D125DD30077C010 /* Messages.framework */; };
+		68F2066B1D125DD30077C010 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F2066A1D125DD30077C010 /* MessagesViewController.swift */; };
+		68F2066E1D125DD30077C010 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F2066C1D125DD30077C010 /* MainInterface.storyboard */; };
+		68F206701D125DD30077C010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F2066F1D125DD30077C010 /* Assets.xcassets */; };
+		68F206741D125DD30077C010 /* Custom-Sticker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 68F206651D125DD30077C010 /* Custom-Sticker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +29,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 688D26C51D11FD5B0056DA1A;
 			remoteInfo = "DespicableMe-Stickers";
+		};
+		68F206721D125DD30077C010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 688D26A71D11FD370056DA1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68F206641D125DD30077C010;
+			remoteInfo = "Custom-Sticker";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -34,6 +47,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				688D26CD1D11FD5B0056DA1A /* DespicableMe-Stickers.appex in Embed App Extensions */,
+				68F206741D125DD30077C010 /* Custom-Sticker.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +65,13 @@
 		688D26C61D11FD5B0056DA1A /* DespicableMe-Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DespicableMe-Stickers.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		688D26C81D11FD5B0056DA1A /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		688D26CA1D11FD5B0056DA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689270651D138338005E8949 /* StickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
+		68F206651D125DD30077C010 /* Custom-Sticker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Custom-Sticker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68F206671D125DD30077C010 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		68F2066A1D125DD30077C010 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		68F2066D1D125DD30077C010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		68F2066F1D125DD30077C010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68F206711D125DD30077C010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +79,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F206621D125DD30077C010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F206681D125DD30077C010 /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +98,8 @@
 			children = (
 				688D26B11D11FD370056DA1A /* iMessage-Framework-Sampler */,
 				688D26C71D11FD5B0056DA1A /* DespicableMe-Stickers */,
+				68F206691D125DD30077C010 /* Custom-Sticker */,
+				68F206661D125DD30077C010 /* Frameworks */,
 				688D26B01D11FD370056DA1A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +109,7 @@
 			children = (
 				688D26AF1D11FD370056DA1A /* iMessage-Framework-Sampler.app */,
 				688D26C61D11FD5B0056DA1A /* DespicableMe-Stickers.appex */,
+				68F206651D125DD30077C010 /* Custom-Sticker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +136,26 @@
 			path = "DespicableMe-Stickers";
 			sourceTree = "<group>";
 		};
+		68F206661D125DD30077C010 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68F206671D125DD30077C010 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68F206691D125DD30077C010 /* Custom-Sticker */ = {
+			isa = PBXGroup;
+			children = (
+				68F2066A1D125DD30077C010 /* MessagesViewController.swift */,
+				68F2066C1D125DD30077C010 /* MainInterface.storyboard */,
+				68F2066F1D125DD30077C010 /* Assets.xcassets */,
+				68F206711D125DD30077C010 /* Info.plist */,
+				689270651D138338005E8949 /* StickerCell.swift */,
+			);
+			path = "Custom-Sticker";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +172,7 @@
 			);
 			dependencies = (
 				688D26CC1D11FD5B0056DA1A /* PBXTargetDependency */,
+				68F206731D125DD30077C010 /* PBXTargetDependency */,
 			);
 			name = "iMessage-Framework-Sampler";
 			productName = "iMessage-Framework-Sampler";
@@ -140,6 +193,23 @@
 			productName = "DespicableMe-Stickers";
 			productReference = 688D26C61D11FD5B0056DA1A /* DespicableMe-Stickers.appex */;
 			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
+		68F206641D125DD30077C010 /* Custom-Sticker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F206771D125DD30077C010 /* Build configuration list for PBXNativeTarget "Custom-Sticker" */;
+			buildPhases = (
+				68F206611D125DD30077C010 /* Sources */,
+				68F206621D125DD30077C010 /* Frameworks */,
+				68F206631D125DD30077C010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Custom-Sticker";
+			productName = "Custom-Sticker";
+			productReference = 68F206651D125DD30077C010 /* Custom-Sticker.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
 
@@ -163,6 +233,12 @@
 						DevelopmentTeamName = "Poojan jhaveri (Personal Team)";
 						ProvisioningStyle = Automatic;
 					};
+					68F206641D125DD30077C010 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6HTTB3677F;
+						DevelopmentTeamName = "Poojan jhaveri (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 688D26AA1D11FD370056DA1A /* Build configuration list for PBXProject "iMessage-Framework-Sampler" */;
@@ -180,6 +256,7 @@
 			targets = (
 				688D26AE1D11FD370056DA1A /* iMessage-Framework-Sampler */,
 				688D26C51D11FD5B0056DA1A /* DespicableMe-Stickers */,
+				68F206641D125DD30077C010 /* Custom-Sticker */,
 			);
 		};
 /* End PBXProject section */
@@ -203,6 +280,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68F206631D125DD30077C010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F206701D125DD30077C010 /* Assets.xcassets in Resources */,
+				68F2066E1D125DD30077C010 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,6 +301,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68F206611D125DD30077C010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F2066B1D125DD30077C010 /* MessagesViewController.swift in Sources */,
+				689270661D138338005E8949 /* StickerCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -222,6 +317,11 @@
 			isa = PBXTargetDependency;
 			target = 688D26C51D11FD5B0056DA1A /* DespicableMe-Stickers */;
 			targetProxy = 688D26CB1D11FD5B0056DA1A /* PBXContainerItemProxy */;
+		};
+		68F206731D125DD30077C010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68F206641D125DD30077C010 /* Custom-Sticker */;
+			targetProxy = 68F206721D125DD30077C010 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -240,6 +340,14 @@
 				688D26BC1D11FD370056DA1A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		68F2066C1D125DD30077C010 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68F2066D1D125DD30077C010 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -337,6 +445,7 @@
 		688D26C21D11FD370056DA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iMessage-Framework-Sampler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -349,6 +458,7 @@
 		688D26C31D11FD370056DA1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iMessage-Framework-Sampler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -380,6 +490,32 @@
 			};
 			name = Release;
 		};
+		68F206751D125DD30077C010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				INFOPLIST_FILE = "Custom-Sticker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.poojan.iMessage-Framework-Sampler.Custom-Sticker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		68F206761D125DD30077C010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				INFOPLIST_FILE = "Custom-Sticker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.poojan.iMessage-Framework-Sampler.Custom-Sticker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -399,6 +535,7 @@
 				688D26C31D11FD370056DA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		688D26CE1D11FD5B0056DA1A /* Build configuration list for PBXNativeTarget "DespicableMe-Stickers" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +544,16 @@
 				688D26D01D11FD5B0056DA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68F206771D125DD30077C010 /* Build configuration list for PBXNativeTarget "Custom-Sticker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68F206751D125DD30077C010 /* Debug */,
+				68F206761D125DD30077C010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
